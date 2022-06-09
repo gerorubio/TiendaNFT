@@ -1,0 +1,93 @@
+:root {
+    --oxford-blue:      hsl(217, 54%, 11%);
+    --light-oxford-blue:	hsl(0, 7%, 14%);
+    --indigo-dye:       hsl(215, 32%, 27%);
+    --blue-yonder:      hsl(216, 30%, 55%);
+    --aqua:             hsl(178, 100%, 50%);
+    --white:            hsl(0, 54%, 100%);
+}
+
+.card {
+    background-color: var(--light-oxford-blue);
+    max-width: 20rem;
+    padding: 1rem;
+    border-radius: 0.938rem;
+    box-shadow: 0 1.25rem 1.563rem 0.938rem rgba(0, 0, 0, 0.05),
+                0 3rem 1.875rem 0.938rem rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+.card-product-img {
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.card-product-img:hover::after {
+    opacity: 1;
+}
+
+.card-product-img img {
+    width: 100%;
+    display: block;
+}
+
+.card-body {
+    padding: 1.25rem 0;
+}
+
+.card-title {
+    color: var(--white);
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 0.938rem;
+}
+
+.card-title:hover {
+    color: aqua;
+}
+
+.card-body .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-prince, .card-author {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.card-price {
+    color: var(--aqua);
+}
+
+.card-icon {
+    margin-right: 0.375rem;
+}
+
+.card-author {
+     color: var(--blue-yonder);
+}
+
+.card-author-img {
+    width: 2.125rem;
+    height: 340;
+    border: 2pc solid var(--white);
+    border-radius: 3.125rem;
+    margin-right: 0.938rem;
+}
+
+.card-author-name {
+    color: var(--blue-yonder);
+    font-weight: 500;
+}
+
+.card-author-name a {
+    color: white;
+    font-weight: 400;
+}
+
+.card-author-name a:hover{
+    color: var(--aqua);
+}
